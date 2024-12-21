@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://tempuri.org/XMLSchema.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:mstns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+	<xs:element name="BFHRGP">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="termek" type="termekTipus" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element name="vasaro" type="vasarloTipus" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element name="vasarlas" type="vasarlasTipus" maxOccurs="unbounded" minOccurs="0" />	
+			</xs:sequence>
+		</xs:complexType>
+
+		<xs:key name="TermekKod">
+			<xs:selector xpath="BFHRGP/termek"/>
+			<xs:field xpath="@TermekKod"/>
+		</xs:key>
+
+		<xs:key name="VasarloID">
+			<xs:selector xpath="BFHRGP/vasarlo"/>
+			<xs:field xpath="@VasarloID"/>
+		</xs:key>
+
+		<xs:key name="VasarlasID">
+			<xs:selector xpath="BFHRGP/vasarlas"/>
+			<xs:field xpath="@VasarlasID"/>
+		</xs:key>
+
+
+		<xs:keyref name="termek-vasarlas" refer="TermekKod">
+			<xs:selector xpath="BFHRGP/vasarlas/TermekID"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+
+		<xs:keyref name="vasarlo-vasarlas" refer="VasarloID">
+			<xs:selector xpath="BFHRGP/vasarlas/VasarloID"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+
+		
+	</xs:element>
+
+	
+	<xs:complexType name="termekTipus">
+		<xs:sequence>
+			<xs:element type="xs:string" name="nev" />
+			<xs:element type="xs:int" name="ar" />
+			<xs:element type="xs:int" name="meret" />
+		</xs:sequence>
+		<xs:attribute type="xs:short" name="TermekKod" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="vasarloTipus">
+		<xs:sequence>
+			<xs:element type="xs:string" name="nev" />
+			<xs:element type="xs:short" name="iranyitoszam" />
+			<xs:element type="xs:string" name="varos" />
+			<xs:element type="xs:string" name="utca" />
+			<xs:element type="xs:short" name="hazszam" />
+			<xs:element type="xs:string" name="FizMod" />
+		</xs:sequence>
+		<xs:attribute type="xs:short" name="VasarloID" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="vasarlasTipus">
+		<xs:sequence>
+			<xs:element type="xs:int" name="darab" />
+			<xs:element type="xs:string" name="datum" />
+			<xs:element type="xs:short" name="TermekID" />
+			<xs:element type="xs:short" name="VasarloID" />
+		</xs:sequence>
+		<xs:attribute type="xs:short" name="VasarlasID" use="required" />
+	</xs:complexType>
+
+	
+</xs:schema>

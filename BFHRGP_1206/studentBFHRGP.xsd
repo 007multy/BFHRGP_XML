@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://tempuri.org/XMLSchema.xsd"
+		elementFormDefault="qualified"
+		xmlns="http://tempuri.org/XMLSchema.xsd"
+		xmlns:mstns="http://tempuri.org/XMLSchema.xsd"
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+		<xs:element name="class">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="student" type="studentTipus" maxOccurs="unbounded" minOccurs="0" />
+				</xs:sequence>
+			</xs:complexType>
+
+			<xs:key name="student">
+				<xs:selector xpath="class/student"/>
+				<xs:field xpath="@id"/>
+			</xs:key>
+
+		</xs:element>
+
+
+		<xs:complexType name="studentTipus">
+			<xs:sequence>
+				<xs:element type="xs:string" name="keresztnev" />
+				<xs:element type="xs:string" name="vezeteknev" />
+				<xs:element type="xs:string" name="becenev" />
+				<xs:element type="xs:int" name="kor" />
+			</xs:sequence>
+			<xs:attribute type="xs:short" name="id" use="required" />
+		</xs:complexType>
+
+
+
+</xs:schema>

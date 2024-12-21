@@ -1,0 +1,136 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="cukraszdak">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="cukraszda">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="cukraszda_adatok" type="cukraszdaTipus" maxOccurs="unbounded" minOccurs="0" />
+							<xs:element name="futar" type="futarTipus" maxOccurs="unbounded" minOccurs="0" />
+							<xs:element name="termek" type="termekTipus" maxOccurs="unbounded" minOccurs="0" />
+							<xs:element name="vevo" type="vevoTipus" maxOccurs="unbounded" minOccurs="0" />
+							<xs:element name="rendeles" type="rendelesTipus" maxOccurs="unbounded" minOccurs="0" />
+							<xs:element name="kartya" type="kartyaTipus" maxOccurs="unbounded" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+
+		<xs:key name="CukraszdaID">
+			<xs:selector xpath="cukraszda/cukraszda_adatok"/>
+			<xs:field xpath="@CukraszdaID"/>
+		</xs:key>
+
+		<xs:key name="FutarID">
+			<xs:selector xpath="cukraszda/futar"/>
+			<xs:field xpath="@FutarID"/>
+		</xs:key>
+
+		<xs:key name="TermekID">
+			<xs:selector xpath="cukraszda/termek"/>
+			<xs:field xpath="@TermekID"/>
+		</xs:key>
+		
+		<xs:key name="VevoID">
+			<xs:selector xpath="cukraszda/vevo"/>
+			<xs:field xpath="@VevoID"/>
+		</xs:key>
+		
+		<xs:key name="RendelesID">
+			<xs:selector xpath="cukraszda/rendeles"/>
+			<xs:field xpath="@RendelesID"/>
+		</xs:key>
+
+		<xs:key name="Kartyaszam">
+			<xs:selector xpath="cukraszda/kartya"/>
+			<xs:field xpath="@Kartyaszam"/>
+		</xs:key>
+		
+		<xs:keyref name="cukraszda-futar" refer="CukraszdaID">
+			<xs:selector xpath="cukraszda/futar/CukraszdaID"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		
+		<xs:keyref name="cukraszda-termek" refer="CukraszdaID">
+			<xs:selector xpath="cukraszda/termek/CukraszdaID"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		
+		<xs:keyref name="termek-rendeles" refer="TermekID">
+			<xs:selector xpath="cukraszda/rendeles/TermekID"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		
+		<xs:keyref name="vevo-rendeles" refer="VevoID">
+			<xs:selector xpath="cukraszda/rendeles/VevoID"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		
+		<xs:keyref name="vevo-kartya" refer="VevoID">
+			<xs:selector xpath="cukraszda/kartya/VevoID"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+	</xs:element>
+
+	<xs:complexType name="cukraszdaTipus">
+		<xs:sequence>
+			<xs:element type="xs:string" name="nev" />
+			<xs:element type="xs:string" name="nyitvatartas" />
+			<xs:element type="xs:string" name="weboldal"/>
+			<xs:element type="xs:int" name="telefonszam"/>	
+		</xs:sequence>
+		<xs:attribute type="xs:short" name="CukraszdaID" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="futarTipus">
+		<xs:sequence>
+			<xs:element type="xs:string" name="nev" />
+			<xs:element type="xs:string" name="telefonszam" />
+			<xs:element type="xs:short"  name="CukraszdaID" />
+		</xs:sequence>
+		<xs:attribute type="xs:short" name="FutarID" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="termekTipus">
+		<xs:sequence>
+			<xs:element type="xs:string" name="nev" />
+			<xs:element type="xs:string" name="tipus" />
+			<xs:element type="xs:int" name="egyseg_ar" />
+			<xs:element type="xs:short"  name="CukraszdaID" />
+		</xs:sequence>
+		<xs:attribute type="xs:short" name="TermekID" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="vevoTipus">
+		<xs:sequence>
+			<xs:element type="xs:string" name="nev" />
+			<xs:element type="xs:short" name="iranyitoszam" />
+			<xs:element type="xs:string" name="varos" />
+			<xs:element type="xs:string" name="utca" />
+			<xs:element type="xs:short" name="hazszam" />
+			<xs:element type="xs:long" name="telefonszam" />
+		</xs:sequence>
+		<xs:attribute type="xs:short" name="VevoID" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="rendelesTipus">
+		<xs:sequence>
+			<xs:element type="xs:int" name="mennyiseg" />
+			<xs:element type="xs:int" name="fizetendo_osszeg" />
+			<xs:element type="xs:short" name="TermekID" />
+			<xs:element type="xs:short" name="VevoID" />
+		</xs:sequence>
+		<xs:attribute type="xs:short" name="RendelesID" use="required" />
+	</xs:complexType>
+		
+	<xs:complexType name="kartyaTipus">
+		<xs:sequence>
+			<xs:element type="xs:string" name="tipus" />
+			<xs:element type="xs:date" name="lejarati_datum" />
+			<xs:element type="xs:string" name="bank" />
+			<xs:element type="xs:short"  name="VevoID" />
+		</xs:sequence>
+		<xs:attribute type="xs:long" name="Kartyaszam" use="required" />
+	</xs:complexType>
+</xs:schema>

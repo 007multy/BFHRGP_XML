@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://tempuri.org/XMLSchema.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:mstns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+	
+	<xs:element name="BFHRGP_Vendeglatas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="etterem" type="etteremTipus" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element name="foszakacs" type="foszakacsTipus" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element name="szakacs" type="szakacsTipus" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element name="gyakornok" type="gyakornokTipus" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element name="vendeg" type="vendegTipus" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element name="rendeles" type="rendelesTipus" maxOccurs="unbounded" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+
+		<xs:key name="EKod">
+			<xs:selector xpath="etterem"/>
+			<xs:field xpath="@EKod"/>
+		</xs:key>
+
+		<xs:key name="FKod">
+			<xs:selector xpath="BFHRGP_Vendeglatas/foszakacs"/>
+			<xs:field xpath="@FKod"/>
+		</xs:key>
+
+		<xs:key name="SzKod">
+			<xs:selector xpath="BFHRGP_Vendeglatas/szakacs"/>
+			<xs:field xpath="@SzKod"/>
+		</xs:key>
+
+		<xs:key name="GyKod">
+			<xs:selector xpath="BFHRGP_Vendeglatas/gyakornok"/>
+			<xs:field xpath="@GyKod"/>
+		</xs:key>
+		
+		<xs:key name="VKod">
+			<xs:selector xpath="BFHRGP_Vendeglatas/vendeg"/>
+			<xs:field xpath="@VKod"/>
+		</xs:key>
+
+		<xs:key name="RendelesID">
+			<xs:selector xpath="BFHRGP_Vendeglatas/rendeles"/>
+			<xs:field xpath="@RendelesID"/>
+		</xs:key>
+		
+
+		<xs:keyref name="etterem-foszakacs" refer="EKod">
+			<xs:selector xpath="foszakacs/etterem_id"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+
+		<xs:keyref name="etterem-szakacs" refer="EKod">
+			<xs:selector xpath="BFHRGP_Vendeglatas/szakacs/etterem_id"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+
+		<xs:keyref name="etterem-gyakornok" refer="EKod">
+			<xs:selector xpath="BFHRGP_Vendeglatas/gyakornok/etterem_id"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+
+		<xs:keyref name="etterem-vendeg" refer="EKod">
+			<xs:selector xpath="BFHRGP_Vendeglatas/vendeg/etterem_id"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+
+		<xs:keyref name="etterem-rendeles" refer="EKod">
+			<xs:selector xpath="BFHRGP_Vendeglatas/rendeles/etterem_id"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+
+		<xs:keyref name="vevo-rendeles" refer="VKod">
+			<xs:selector xpath="BFHRGP_Vendeglatas/rendeles/vendeg_id"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+
+
+	</xs:element>
+
+
+	<xs:complexType name="etteremTipus">
+		<xs:sequence>
+			<xs:element type="xs:string" name="nev" />
+			<xs:element type="xs:string" name="varos" />
+			<xs:element type="xs:string" name="utca" />
+			<xs:element type="xs:int" name="hazszam" />
+			<xs:element type="xs:int" name="csillag" />
+		</xs:sequence>
+		<xs:attribute type="xs:short" name="Ekod" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="foszakacsTipus">
+		<xs:sequence>
+			<xs:element type="xs:string" name="nev" />
+			<xs:element type="xs:int" name="eletkor" />
+			<xs:element type="xs:string" name="vegzettseg" />
+			<xs:element type="xs:short" name="etterem_id" />
+		</xs:sequence>
+		<xs:attribute type="xs:short" name="FKod" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="szakacsTipus">
+		<xs:sequence>
+			<xs:element type="xs:string" name="nev" />
+			<xs:element type="xs:string" name="reszleg" />
+			<xs:element type="xs:string" name="vegzettseg" />
+			<xs:element type="xs:short" name="etterem_id" />
+		</xs:sequence>
+		<xs:attribute type="xs:short" name="SzKod" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="gyakornokTipus">
+		<xs:sequence>
+			<xs:element type="xs:string" name="nev" />
+			<xs:element type="xs:string" name="gyak_kezdete" />
+			<xs:element type="xs:string" name="gyak_idotartama" />
+			<xs:element type="xs:string" name="muszak" />
+			<xs:element type="xs:short" name="etterem_id" />
+		</xs:sequence>
+		<xs:attribute type="xs:short" name="GyKod" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="vendegTipus">
+		<xs:sequence>
+			<xs:element type="xs:string" name="nev" />
+			<xs:element type="xs:string" name="varos" />
+			<xs:element type="xs:string" name="utca" />
+			<xs:element type="xs:int" name="hazszam" />
+			<xs:element type="xs:int" name="eletkor" />
+			<xs:element type="xs:short" name="etterem_id" />
+		</xs:sequence>
+		<xs:attribute type="xs:short" name="VKod" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="rendelesTipus">
+		<xs:sequence>
+			<xs:element type="xs:int" name="osszeg" />
+			<xs:element type="xs:string" name="etel" />
+			<xs:element type="xs:short" name="etterem_id" />
+			<xs:element type="xs:short" name="vendeg_id" />
+		</xs:sequence>
+		<xs:attribute type="xs:short" name="RendelesID" use="required" />
+	</xs:complexType>
+
+
+
+</xs:schema>

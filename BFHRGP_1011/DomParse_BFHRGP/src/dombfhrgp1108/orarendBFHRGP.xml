@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE orarend SYSTEM "BFHRGP_orarend.dtd">
+
+<orarend>
+	<ora id="20240913" tipus="GEIAL30F-BL2">
+		<targy>UNIX rendszergazda</targy>
+		<idopont>
+			<nap>09.13</nap>
+			<tol>12:30</tol>
+			<ig>15:50</ig>
+		</idopont>
+		<helyszin>In/101</helyszin>
+		<oktato>Dr. Mileff Péter</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20240913" tipus="GEIAK130-BL2">
+		<targy>Mesterséges intelligencia alapok</targy>
+		<idopont>
+			<nap>09.13</nap>
+			<tol>16:00</tol>
+			<ig>19:20</ig>
+		</idopont>
+		<helyszin>Online</helyszin>
+		<oktato>Kunné Dr. Tamás Judit</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20240920" tipus="GEIAL332-BL">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont>
+			<nap>09.20</nap>
+			<tol>12:30</tol>
+			<ig>15:50</ig>
+		</idopont>
+		<helyszin>In/103</helyszin>
+		<oktato>Dr. Bednarik László</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+	
+	<ora id="20240920" tipus="GEIAK130-BL2">
+		<targy>Mesterséges intelligencia alapok</targy>
+		<idopont>
+			<nap>09.20</nap>
+			<tol>16:00</tol>
+			<ig>19:20</ig>
+		</idopont>
+		<helyszin>Online</helyszin>
+		<oktato>Kunné Dr. Tamás Judit</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20240921" tipus="GEIAL331-BL">
+		<targy>Web technológiák 1.</targy>
+		<idopont>
+			<nap>09.21</nap>
+			<tol>8:30</tol>
+			<ig>15:10</ig>
+		</idopont>
+		<helyszin>In/101</helyszin>
+		<oktato>Agárdi Anita</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	
+	<ora id="20240927" tipus="GEIAL332-BL">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont>
+			<nap>09.27</nap>
+			<tol>12:30</tol>
+			<ig>15:50</ig>
+		</idopont>
+		<helyszin>In/101</helyszin>
+		<oktato>Dr. Bednarik László</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+	
+	<ora id="20240927" tipus="GEIAL30F-BL2">
+		<targy>UNIX rendszergazda</targy>
+		<idopont>
+			<nap>09.27</nap>
+			<tol>16:00</tol>
+			<ig>19:20</ig>
+		</idopont>
+		<helyszin>In/101</helyszin>
+		<oktato>Dr. Mileff Péter</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20240928" tipus="GEIAL331-BL">
+		<targy>Web technológiák 1.</targy>
+		<idopont>
+			<nap>09.28</nap>
+			<tol>8:30</tol>
+			<ig>15:10</ig>
+		</idopont>
+		<helyszin>In/101</helyszin>
+		<oktato>Agárdi Anita</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20241004" tipus="GEIAL333-BL">
+		<targy>Web-es alkalmazások (Java)</targy>
+		<idopont>
+			<nap>10.04</nap>
+			<tol>16:00</tol>
+			<ig>19:20</ig>
+		</idopont>
+		<helyszin>Online</helyszin>
+		<oktato>Kunné Dr. Tamás Judit</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20241011" tipus="GEIAL332-BL">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont>
+			<nap>10.11</nap>
+			<tol>12:30</tol>
+			<ig>15:50</ig>
+		</idopont>
+		<helyszin>In/101</helyszin>
+		<oktato>Dr. Bednarik László</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20241011" tipus="GEVEE050-BL2">
+		<targy>Elektrotechnika-elektronika</targy>
+		<idopont>
+			<nap>10.11</nap>
+			<tol>16:00</tol>
+			<ig>19:20</ig>
+		</idopont>
+		<helyszin>III</helyszin>
+		<oktato>Szabó Norbert</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20241108" tipus="GEIAL333-BL">
+		<targy>Web-es alkalmazások (Java)</targy>
+		<idopont>
+			<nap>11.08</nap>
+			<tol>12:30</tol>
+			<ig>15:50</ig>
+		</idopont>
+		<helyszin>Online</helyszin>
+		<oktato>Kunné Dr. Tamás Judit</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20241108" tipus="GEIAL30F-BL2">
+		<targy>UNIX rendszergazda</targy>
+		<idopont>
+			<nap>11.08</nap>
+			<tol>16:00</tol>
+			<ig>19:20</ig>
+		</idopont>
+		<helyszin>In/202</helyszin>
+		<oktato>Dr. Mileff Péter</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20241109" tipus="GEIAL30A-BL2">
+		<targy>Windows rendszergazda</targy>
+		<idopont>
+			<nap>11.09</nap>
+			<tol>08:30</tol>
+			<ig>11:50</ig>
+		</idopont>
+		<helyszin>In/101</helyszin>
+		<oktato>Wagner György</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20241115" tipus="GEIAL333-BL">
+		<targy>Web-es alkalmazások (Java)</targy>
+		<idopont>
+			<nap>11.15</nap>
+			<tol>12:30</tol>
+			<ig>15:50</ig>
+		</idopont>
+		<helyszin>Online</helyszin>
+		<oktato>Kunné Dr. Tamás Judit</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20241115" tipus="GEVEE050-BL2">
+		<targy>Elektrotechnika-elektronika</targy>
+		<idopont>
+			<nap>11.15</nap>
+			<tol>16:00</tol>
+			<ig>19:20</ig>
+		</idopont>
+		<helyszin>X</helyszin>
+		<oktato>Szabó Norbert</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20241116" tipus="GEIAK130-BL2">
+		<targy>Mesterséges intelligencia alapok</targy>
+		<idopont>
+			<nap>11.16</nap>
+			<tol>08:30</tol>
+			<ig>11:50</ig>
+		</idopont>
+		<helyszin>In/15</helyszin>
+		<oktato>Fazekas Levente</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20241122" tipus="GEVEE050-BL2">
+		<targy>Elektrotechnika-elektronika</targy>
+		<idopont>
+			<nap>11.22</nap>
+			<tol>16:00</tol>
+			<ig>19:20</ig>
+		</idopont>
+		<helyszin>X</helyszin>
+		<oktato>Szabó Norbert</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20241123" tipus="GEIAL30A-BL2">
+		<targy>Windows rendszergazda</targy>
+		<idopont>
+			<nap>11.23</nap>
+			<tol>08:30</tol>
+			<ig>11:50</ig>
+		</idopont>
+		<helyszin>In/101</helyszin>
+		<oktato>Wagner György</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20241129" tipus="GEIAL30F-BL2">
+		<targy>UNIX rendszergazda</targy>
+		<idopont>
+			<nap>11.29</nap>
+			<tol>16:00</tol>
+			<ig>19:20</ig>
+		</idopont>
+		<helyszin>In/202</helyszin>
+		<oktato>Dr. Mileff Péter</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+	
+	<ora id="20241130" tipus="GEIAK130-BL2">
+		<targy>Mesterséges intelligencia alapok</targy>
+		<idopont>
+			<nap>11.30</nap>
+			<tol>08:30</tol>
+			<ig>11:50</ig>
+		</idopont>
+		<helyszin>In/114</helyszin>
+		<oktato>Fazekas Levente</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20241206" tipus="GEIAL332-BL">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont>
+			<nap>12.06</nap>
+			<tol>12:30</tol>
+			<ig>15:50</ig>
+		</idopont>
+		<helyszin>In/101</helyszin>
+		<oktato>Dr. Bednarik László</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20241206" tipus="GEIAL30A-BL2">
+		<targy>Windows rendszergazda</targy>
+		<idopont>
+			<nap>12.06</nap>
+			<tol>16:00</tol>
+			<ig>19:20</ig>
+		</idopont>
+		<helyszin>In/101</helyszin>
+		<oktato>Wagner György</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20241207" tipus="GEIAL333-BL">
+		<targy>Web-es alkalmazások (Java)</targy>
+		<idopont>
+			<nap>12.07</nap>
+			<tol>08:30</tol>
+			<ig>11:50</ig>
+		</idopont>
+		<helyszin>Online</helyszin>
+		<oktato>Kunné Dr. Tamás Judit</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+	
+	<ora id="20241207" tipus="GEVEE050-BL2">
+		<targy>Elektrotechnika-elektronika</targy>
+		<idopont>
+			<nap>12.07</nap>
+			<tol>12:20</tol>
+			<ig>15:40</ig>
+		</idopont>
+		<helyszin>XXX</helyszin>
+		<oktato>Szabó Norbert</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+	<ora id="20241213" tipus="GEIAL30A-BL2">
+		<targy>Windows rendszergazda</targy>
+		<idopont>
+			<nap>12.13</nap>
+			<tol>16:00</tol>
+			<ig>19:20</ig>
+		</idopont>
+		<helyszin>In/101</helyszin>
+		<oktato>Wagner György</oktato>
+		<szak>mérnökinformatikus</szak>
+	</ora>
+
+
+</orarend>

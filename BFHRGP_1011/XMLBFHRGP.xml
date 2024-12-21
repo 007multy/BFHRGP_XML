@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<BFHRGP_Vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaBFHRGP.xsd">
+
+	<etterem EKod="1">
+		<nev>Hbh</nev>
+		<varos>Eger</varos>
+		<utca>Kistalyai</utca>
+		<hazszam>5</hazszam>
+		<csillag>4</csillag>
+	</etterem>
+
+	<etterem EKod="2">
+		<nev>Bar Italia</nev>
+		<varos>Miskolc</varos>
+		<utca>Eper</utca>
+		<hazszam>2</hazszam>
+		<csillag>5</csillag>
+	</etterem>
+
+	<foszakacs FKod="1">
+		<nev>Matis Richard</nev>
+		<eletkor>30</eletkor>
+		<vegzettseg>szakacs</vegzettseg>
+		<etterem_id>1</etterem_id>
+	</foszakacs>
+
+	<foszakacs FKod="2">
+		<nev>Nagy Bela</nev>
+		<eletkor>35</eletkor>
+		<vegzettseg>szakacs</vegzettseg>
+		<etterem_id>2</etterem_id>
+	</foszakacs>
+
+	<szakacs SzKod="1">
+		<nev>Foldesi Dominik</nev>
+		<reszleg>konyha</reszleg>
+		<vegzettseg>felszolgalo</vegzettseg>
+		<etterem_id>1</etterem_id>
+	</szakacs>
+
+	<gyakornok GyKod="1">
+		<nev>Kocsis Peter</nev>
+		<gyak_kezdete>2024.11.01</gyak_kezdete>
+		<gyak_idotartama>6 honap</gyak_idotartama>
+		<muszak>delutan</muszak>
+		<etterem_id>1</etterem_id>
+	</gyakornok>
+
+	<vendeg VKod="1">
+		<nev>Gulyas Gabor</nev>
+		<varos>Eger</varos>
+		<utca>Kistalyai</utca>
+		<hazszam>2</hazszam>
+		<eletkor>20</eletkor>
+		<etterem_id>1</etterem_id>
+	</vendeg>
+
+	<rendeles RendelesID="1">
+		<osszeg>5800</osszeg>
+		<etel>Harcsapaprikas</etel>
+		<etterem_id>1</etterem_id>
+		<vendeg_id>1</vendeg_id>
+	</rendeles>
+
+</BFHRGP_Vendeglatas>

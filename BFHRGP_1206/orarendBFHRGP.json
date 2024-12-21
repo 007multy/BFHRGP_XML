@@ -1,0 +1,345 @@
+{
+  "!DOCTYPE": "orarend SYSTEM \"BFHRGP_orarend.dtd\"",
+  "orarend": {
+    "ora": [
+      {
+        "-id": "20240913",
+        "-tipus": "GEIAL30F-BL2",
+        "targy": "UNIX rendszergazda",
+        "idopont": {
+          "nap": "09.13",
+          "tol": "12:30",
+          "ig": "15:50"
+        },
+        "helyszin": "In/101",
+        "oktato": "Dr. Mileff Péter",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20240913",
+        "-tipus": "GEIAK130-BL2",
+        "targy": "Mesterséges intelligencia alapok",
+        "idopont": {
+          "nap": "09.13",
+          "tol": "16:00",
+          "ig": "19:20"
+        },
+        "helyszin": "Online",
+        "oktato": "Kunné Dr. Tamás Judit",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20240920",
+        "-tipus": "GEIAL332-BL",
+        "targy": "Adatkezelés XML-ben",
+        "idopont": {
+          "nap": "09.20",
+          "tol": "12:30",
+          "ig": "15:50"
+        },
+        "helyszin": "In/103",
+        "oktato": "Dr. Bednarik László",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20240920",
+        "-tipus": "GEIAK130-BL2",
+        "targy": "Mesterséges intelligencia alapok",
+        "idopont": {
+          "nap": "09.20",
+          "tol": "16:00",
+          "ig": "19:20"
+        },
+        "helyszin": "Online",
+        "oktato": "Kunné Dr. Tamás Judit",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20240921",
+        "-tipus": "GEIAL331-BL",
+        "targy": "Web technológiák 1.",
+        "idopont": {
+          "nap": "09.21",
+          "tol": "8:30",
+          "ig": "15:10"
+        },
+        "helyszin": "In/101",
+        "oktato": "Agárdi Anita",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20240927",
+        "-tipus": "GEIAL332-BL",
+        "targy": "Adatkezelés XML-ben",
+        "idopont": {
+          "nap": "09.27",
+          "tol": "12:30",
+          "ig": "15:50"
+        },
+        "helyszin": "In/101",
+        "oktato": "Dr. Bednarik László",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20240927",
+        "-tipus": "GEIAL30F-BL2",
+        "targy": "UNIX rendszergazda",
+        "idopont": {
+          "nap": "09.27",
+          "tol": "16:00",
+          "ig": "19:20"
+        },
+        "helyszin": "In/101",
+        "oktato": "Dr. Mileff Péter",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20240928",
+        "-tipus": "GEIAL331-BL",
+        "targy": "Web technológiák 1.",
+        "idopont": {
+          "nap": "09.28",
+          "tol": "8:30",
+          "ig": "15:10"
+        },
+        "helyszin": "In/101",
+        "oktato": "Agárdi Anita",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241004",
+        "-tipus": "GEIAL333-BL",
+        "targy": "Web-es alkalmazások (Java)",
+        "idopont": {
+          "nap": "10.04",
+          "tol": "16:00",
+          "ig": "19:20"
+        },
+        "helyszin": "Online",
+        "oktato": "Kunné Dr. Tamás Judit",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241011",
+        "-tipus": "GEIAL332-BL",
+        "targy": "Adatkezelés XML-ben",
+        "idopont": {
+          "nap": "10.11",
+          "tol": "12:30",
+          "ig": "15:50"
+        },
+        "helyszin": "In/101",
+        "oktato": "Dr. Bednarik László",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241011",
+        "-tipus": "GEVEE050-BL2",
+        "targy": "Elektrotechnika-elektronika",
+        "idopont": {
+          "nap": "10.11",
+          "tol": "16:00",
+          "ig": "19:20"
+        },
+        "helyszin": "III",
+        "oktato": "Szabó Norbert",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241108",
+        "-tipus": "GEIAL333-BL",
+        "targy": "Web-es alkalmazások (Java)",
+        "idopont": {
+          "nap": "11.08",
+          "tol": "12:30",
+          "ig": "15:50"
+        },
+        "helyszin": "Online",
+        "oktato": "Kunné Dr. Tamás Judit",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241108",
+        "-tipus": "GEIAL30F-BL2",
+        "targy": "UNIX rendszergazda",
+        "idopont": {
+          "nap": "11.08",
+          "tol": "16:00",
+          "ig": "19:20"
+        },
+        "helyszin": "In/202",
+        "oktato": "Dr. Mileff Péter",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241109",
+        "-tipus": "GEIAL30A-BL2",
+        "targy": "Windows rendszergazda",
+        "idopont": {
+          "nap": "11.09",
+          "tol": "08:30",
+          "ig": "11:50"
+        },
+        "helyszin": "In/101",
+        "oktato": "Wagner György",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241115",
+        "-tipus": "GEIAL333-BL",
+        "targy": "Web-es alkalmazások (Java)",
+        "idopont": {
+          "nap": "11.15",
+          "tol": "12:30",
+          "ig": "15:50"
+        },
+        "helyszin": "Online",
+        "oktato": "Kunné Dr. Tamás Judit",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241115",
+        "-tipus": "GEVEE050-BL2",
+        "targy": "Elektrotechnika-elektronika",
+        "idopont": {
+          "nap": "11.15",
+          "tol": "16:00",
+          "ig": "19:20"
+        },
+        "helyszin": "X",
+        "oktato": "Szabó Norbert",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241116",
+        "-tipus": "GEIAK130-BL2",
+        "targy": "Mesterséges intelligencia alapok",
+        "idopont": {
+          "nap": "11.16",
+          "tol": "08:30",
+          "ig": "11:50"
+        },
+        "helyszin": "In/15",
+        "oktato": "Fazekas Levente",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241122",
+        "-tipus": "GEVEE050-BL2",
+        "targy": "Elektrotechnika-elektronika",
+        "idopont": {
+          "nap": "11.22",
+          "tol": "16:00",
+          "ig": "19:20"
+        },
+        "helyszin": "X",
+        "oktato": "Szabó Norbert",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241123",
+        "-tipus": "GEIAL30A-BL2",
+        "targy": "Windows rendszergazda",
+        "idopont": {
+          "nap": "11.23",
+          "tol": "08:30",
+          "ig": "11:50"
+        },
+        "helyszin": "In/101",
+        "oktato": "Wagner György",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241129",
+        "-tipus": "GEIAL30F-BL2",
+        "targy": "UNIX rendszergazda",
+        "idopont": {
+          "nap": "11.29",
+          "tol": "16:00",
+          "ig": "19:20"
+        },
+        "helyszin": "In/202",
+        "oktato": "Dr. Mileff Péter",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241130",
+        "-tipus": "GEIAK130-BL2",
+        "targy": "Mesterséges intelligencia alapok",
+        "idopont": {
+          "nap": "11.30",
+          "tol": "08:30",
+          "ig": "11:50"
+        },
+        "helyszin": "In/114",
+        "oktato": "Fazekas Levente",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241206",
+        "-tipus": "GEIAL332-BL",
+        "targy": "Adatkezelés XML-ben",
+        "idopont": {
+          "nap": "12.06",
+          "tol": "12:30",
+          "ig": "15:50"
+        },
+        "helyszin": "In/101",
+        "oktato": "Dr. Bednarik László",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241206",
+        "-tipus": "GEIAL30A-BL2",
+        "targy": "Windows rendszergazda",
+        "idopont": {
+          "nap": "12.06",
+          "tol": "16:00",
+          "ig": "19:20"
+        },
+        "helyszin": "In/101",
+        "oktato": "Wagner György",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241207",
+        "-tipus": "GEIAL333-BL",
+        "targy": "Web-es alkalmazások (Java)",
+        "idopont": {
+          "nap": "12.07",
+          "tol": "08:30",
+          "ig": "11:50"
+        },
+        "helyszin": "Online",
+        "oktato": "Kunné Dr. Tamás Judit",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241207",
+        "-tipus": "GEVEE050-BL2",
+        "targy": "Elektrotechnika-elektronika",
+        "idopont": {
+          "nap": "12.07",
+          "tol": "12:20",
+          "ig": "15:40"
+        },
+        "helyszin": "XXX",
+        "oktato": "Szabó Norbert",
+        "szak": "mérnökinformatikus"
+      },
+      {
+        "-id": "20241213",
+        "-tipus": "GEIAL30A-BL2",
+        "targy": "Windows rendszergazda",
+        "idopont": {
+          "nap": "12.13",
+          "tol": "16:00",
+          "ig": "19:20"
+        },
+        "helyszin": "In/101",
+        "oktato": "Wagner György",
+        "szak": "mérnökinformatikus"
+      }
+    ]
+  }
+}

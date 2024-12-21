@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<konferencia>
+	<cim>Adatkezelés XML-ben</cim>
+	<hallgatók>
+		<hallgató>
+			<név>Gulyás Gábor</név>
+			<lakcím>Kistályai út 8.</lakcím>
+		</hallgató>
+		<hallgató>
+			<név>Mikó Olivér</név>
+			<lakcím>Posta köz 5.</lakcím>
+		</hallgató>
+		<hallgató>
+			<név>Kovács Kristóf</név>
+			<lakcím>Sas út 8.</lakcím>
+		</hallgató>
+	</hallgatók>
+	<helyszín>Informatikai intézet</helyszín>
+	<előadó>
+		<név>Dr. Bednarik László</név>
+		<adószám>123456789</adószám>
+		<lakcím>Eper utca 6.</lakcím>
+	</előadó>
+	<dátum>2024.12.17</dátum>
+</konferencia>
